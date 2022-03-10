@@ -13,22 +13,22 @@ Giải pháp:
 => Ý tưởng viết nên phần mềm này
 
 Sau khi download phần mềm, bạn sẽ có được một giao diện như sau:
-![Giao diện ban đầu](https://thanh-pt.github.io/LearningToeicLC/blob/gh-pages/assets/img/guide/1_openApp.png)
+![Giao diện ban đầu](https://thanh-pt.github.io/LearningToeicLC/assets/img/guide/1_openApp.png)
 
 Sau đó, tiến hành tạo project cho lần khởi chạy đầu tiên và mở một project đã có sẵn cho lần những lần sau
-![Tạo hoặc mở project](https://thanh-pt.github.io/LearningToeicLC/blob/gh-pages/assets/img/guide/2_create%20Project.png)
+![Tạo hoặc mở project](https://thanh-pt.github.io/LearningToeicLC/assets/img/guide/2_create%20Project.png)
 
 Bước tiếp theo, như những trình chơi nhạc bình thường. Hãy chọn file nghe mp3 toeic mà bạn đang cần luyện tập:
-![Mở file mp3](https://thanh-pt.github.io/LearningToeicLC/blob/gh-pages/assets/img/guide/3_Open%20media%20file.png)
-![Chạy file mp3 như bình thường](https://thanh-pt.github.io/LearningToeicLC/blob/gh-pages/assets/img/guide/4_running%20like%20any%20mp3%20file%20player.png)
+![Mở file mp3](https://thanh-pt.github.io/LearningToeicLC/assets/img/guide/3_Open%20media%20file.png)
+![Chạy file mp3 như bình thường](https://thanh-pt.github.io/LearningToeicLC/assets/img/guide/4_running%20like%20any%20mp3%20file%20player.png)
 
 *Lưu ý: Những lần sau địa chỉ file mp3 sẽ được lưu lại vào project, nên không cần chọn nữa*
 
 Cuối cùng, tiến hành nghe toeic như bình thường mà tiến hành đánh dấu những phần mình muốn nghe lại sau bằng cách đánh dấu điểm bắt đầu/ điểm kết thúc, mình gọi nó là một session.
-![Đánh dấu session](https://thanh-pt.github.io/LearningToeicLC/blob/gh-pages/assets/img/guide/5_save%20session.png)
+![Đánh dấu session](https://thanh-pt.github.io/LearningToeicLC/assets/img/guide/5_save%20session.png)
 
 Sau khi hoàn thành bài nghe, bạn đã có một list các session. Lựa chọn từng session và tiến hành nghe cho thật kỹ
-![Nghe session](https://thanh-pt.github.io/LearningToeicLC/blob/gh-pages/assets/img/guide/6_%20Replay%20session.png)
+![Nghe session](https://thanh-pt.github.io/LearningToeicLC/assets/img/guide/6_%20Replay%20session.png)
 
 Tiến hành lưu project lại để có thể luyện tập vào những lần sau!!!
 
