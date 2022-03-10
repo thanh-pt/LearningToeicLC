@@ -42,6 +42,8 @@ namespace LearningToeicLC
         {
             foreach (var lbl in Controls.OfType<Control>())
                 lbl.Show();
+            btnCreateProject.Location = new Point(7, 12);
+            btnOpenProject.Location = new Point(7, 41);
         }
 
         private void showWelcomePage()
@@ -60,8 +62,6 @@ namespace LearningToeicLC
             {
                 listBoxSavedItem.Items.Add(session.Name + ": " + session.StartTimeString + " - " + session.EndTimeString);
             }
-            btnCreateProject.Location = new Point(7, 12);
-            btnOpenProject.Location = new Point(7, 41);
         }
 
         private double convertStringTime2Double(string strTime)
@@ -402,6 +402,7 @@ namespace LearningToeicLC
                 currentProjectFilePath = saveFileDialog.FileName;
                 lcProject = new ToeicLCProject();
                 listSessionItems = lcProject.SessionItems;
+                reloadListItem();
                 this.Text = "Learning Toeic LC - " + currentProjectFilePath;
                 showApplication();
             }
