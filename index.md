@@ -1,4 +1,4 @@
-##Learning Toeic LC
+## Learning Toeic LC
 
 Những khó khăn trong việc học một ngôn ngữ mới là không thể tránh khỏi. Trong nhiều khó khăn đó, mình gặp phải một khó khăn rất nhiều lần khi mình thực hiện việc luyện nghe toeic đó là: bài nghe toeic thường rất là dài và trong quá trình nghe đó, nhất là lúc bắt đầu mới nghe, mình gặp rất nhiều từ mới, đoạn văn mới,... hoặc thậm chí những từ đã biết rồi nhưng do âm bản địa khó nghe, dẫn đến việc không thể nghe rõ. Bên cạnh đó với cấu trúc bài nghe toeic, cứ hết bài này lại đến bài khác. Thành ra, chúng ta đành bỏ qua đoạn văn bị mất ý đó.
 
