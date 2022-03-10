@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+## Xin chào đến với phần mềm luyên nghe toeic - Learning Toeic LC
 
-You can use the [editor on GitHub](https://github.com/thanh-pt/LearningToeicLC/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Những khó khăn trong việc học một ngôn ngữ mới là không thể tránh khỏi. Trong nhiều khó khăn đó, mình gặp phải một khó khăn rất nhiều lần khi mình thực hiện việc luyện nghe toeic đó là: bài nghe toeic thường rất là dài và trong quá trình nghe đó, nhất là lúc bắt đầu mới nghe, mình gặp rất nhiều từ mới, đoạn văn mới,... hoặc thậm chí những từ đã biết rồi nhưng do âm bản địa khó nghe, dẫn đến việc không thể nghe rõ. Bên cạnh đó với cấu trúc bài nghe toeic, cứ hết bài này lại đến bài khác. Thành ra, chúng ta đành bỏ qua đoạn văn bị mất ý đó.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Rồi lúc hoàn thành toàn bộ bài nghe như vậy, mình rất là muốn nghe lại những đoạn mà trong quá trình nghe, mình nghe chưa thủng, chưa rõ ý. Nhưng nhiều như vậy, nhanh như vậy, giờ đây mình lục lại thì không thể biết đoạn nào với đoạn nào.
 
-### Markdown
+Khó khăn:
+1. File nghe toeic tương đối dài
+2. Muốn đánh dấu lại đoạn văn khó muốn nghe lại
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Giải pháp:
+1. Một phần mềm nghe audio như nghe nhạc
+2. Có khả năng đánh dấu lại trong quá trình nghe
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/thanh-pt/LearningToeicLC/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+=> Ý tưởng viết nên phần mềm này
