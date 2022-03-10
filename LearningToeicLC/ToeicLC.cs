@@ -269,11 +269,15 @@ namespace LearningToeicLC
 
         private void listBoxSavedItem_SelectedIndexChanged(object sender, EventArgs e)
         {
+            currentIndex = listBoxSavedItem.SelectedIndex;
             if (listBoxSavedItem.SelectedIndex < 0)
             {
+                txtCurrentStart.Text = "";
+                txtCurrentEnd.Text = "";
+                txtCurrentName.Text = "";
+                txtNote.Text = "";
                 return;
             }
-            currentIndex = listBoxSavedItem.SelectedIndex;
             txtCurrentStart.Text = listSessionItems[currentIndex].StartTimeString;
             txtCurrentEnd.Text = listSessionItems[currentIndex].EndTimeString;
             txtCurrentName.Text = listSessionItems[currentIndex].Name;
@@ -282,6 +286,10 @@ namespace LearningToeicLC
 
         private void btnPlaySelected_Click(object sender, EventArgs e)
         {
+            if (currentIndex == -1)
+            {
+                return;
+            }
             wplayer.controls.currentPosition = listSessionItems[currentIndex].StartTime;
             playMode = PLAY_SESSION;
             wplayer.controls.play();
@@ -364,7 +372,22 @@ namespace LearningToeicLC
                 listSessionItems[currentIndex].EndTime = tempEndTime;
                 reloadListItem();
                 listBoxSavedItem.SelectedIndex = currentIndex;
+
+                changeControlFontStyle(txtCurrentName, FontStyle.Regular);
+                changeControlFontStyle(txtCurrentStart, FontStyle.Regular);
+                changeControlFontStyle(txtCurrentEnd, FontStyle.Regular);
             }
+        }
+
+        private void btnDeleteSelected_Click(object sender, EventArgs e)
+        {
+            if (currentIndex == -1)
+            {
+                return;
+            }
+            listSessionItems.Remove(listSessionItems[currentIndex]);
+            listBoxSavedItem.SelectedIndex = -1;
+            reloadListItem();
         }
 
         private void btnJsonGenerate_Click(object sender, EventArgs e)
@@ -432,5 +455,6 @@ namespace LearningToeicLC
                 File.WriteAllText(currentProjectFilePath, json);
             }
         }
+
     }
 }

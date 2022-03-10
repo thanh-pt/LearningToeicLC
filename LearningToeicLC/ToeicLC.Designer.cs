@@ -445,7 +445,7 @@
             this.btnDeleteSelected.TabIndex = 5;
             this.btnDeleteSelected.Text = "Delete";
             this.btnDeleteSelected.UseVisualStyleBackColor = true;
-            this.btnDeleteSelected.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnDeleteSelected.Click += new System.EventHandler(this.btnDeleteSelected_Click);
             // 
             // btnFullPlay
             // 
