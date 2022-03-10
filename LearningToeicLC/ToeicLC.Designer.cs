@@ -595,6 +595,7 @@
             this.MinimumSize = new System.Drawing.Size(720, 400);
             this.Name = "ToeicLC";
             this.Text = "Learning Toeic LC";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ToeicLC_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);

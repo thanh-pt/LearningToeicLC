@@ -419,5 +419,18 @@ namespace LearningToeicLC
                 listSessionItems[currentIndex].Note = txtNote.Text;
             }
         }
+
+        private void ToeicLC_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (currentProjectFilePath == "")
+            {
+                return;
+            }
+            if (MessageBox.Show("Do you want to Save Project?", "Application closing...", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                string json = JsonConvert.SerializeObject(lcProject);
+                File.WriteAllText(currentProjectFilePath, json);
+            }
+        }
     }
 }
