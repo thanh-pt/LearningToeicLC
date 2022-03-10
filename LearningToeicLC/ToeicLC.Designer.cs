@@ -59,9 +59,11 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.listBoxSavedItem = new System.Windows.Forms.ListBox();
             this.SelectedItem = new System.Windows.Forms.GroupBox();
+            this.txtNote = new System.Windows.Forms.RichTextBox();
             this.progressBorderSession = new System.Windows.Forms.Panel();
             this.progressInsideSession = new System.Windows.Forms.Panel();
             this.btnDeleteSelected = new System.Windows.Forms.Button();
+            this.btnFullPlay = new System.Windows.Forms.Button();
             this.btnPlaySelected = new System.Windows.Forms.Button();
             this.btnUpdateSelected = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -74,8 +76,6 @@
             this.btnJsonGenerate = new System.Windows.Forms.Button();
             this.btnOpenProject = new System.Windows.Forms.Button();
             this.btnCreateProject = new System.Windows.Forms.Button();
-            this.txtNote = new System.Windows.Forms.RichTextBox();
-            this.btnFullPlay = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -96,9 +96,9 @@
             this.panel1.Controls.Add(this.txtMediaFileName);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 331);
+            this.panel1.Location = new System.Drawing.Point(0, 282);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(768, 119);
+            this.panel1.Size = new System.Drawing.Size(704, 79);
             this.panel1.TabIndex = 1;
             // 
             // panel4
@@ -138,7 +138,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 13);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(766, 19);
+            this.panel5.Size = new System.Drawing.Size(702, 19);
             this.panel5.TabIndex = 6;
             // 
             // progressBorder
@@ -153,7 +153,7 @@
             this.progressBorder.Cursor = System.Windows.Forms.Cursors.Hand;
             this.progressBorder.Location = new System.Drawing.Point(81, 3);
             this.progressBorder.Name = "progressBorder";
-            this.progressBorder.Size = new System.Drawing.Size(682, 12);
+            this.progressBorder.Size = new System.Drawing.Size(618, 12);
             this.progressBorder.TabIndex = 3;
             this.progressBorder.Click += new System.EventHandler(this.progressBorder_Click);
             // 
@@ -161,7 +161,7 @@
             // 
             this.pinEnd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pinEnd.BackColor = System.Drawing.Color.Crimson;
-            this.pinEnd.Location = new System.Drawing.Point(347, 0);
+            this.pinEnd.Location = new System.Drawing.Point(315, 0);
             this.pinEnd.Name = "pinEnd";
             this.pinEnd.Size = new System.Drawing.Size(3, 12);
             this.pinEnd.TabIndex = 6;
@@ -171,7 +171,7 @@
             // 
             this.pinStart.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pinStart.BackColor = System.Drawing.Color.Lime;
-            this.pinStart.Location = new System.Drawing.Point(100, 0);
+            this.pinStart.Location = new System.Drawing.Point(68, 0);
             this.pinStart.Name = "pinStart";
             this.pinStart.Size = new System.Drawing.Size(3, 12);
             this.pinStart.TabIndex = 5;
@@ -202,7 +202,7 @@
             this.txtMediaFileName.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtMediaFileName.Location = new System.Drawing.Point(0, 0);
             this.txtMediaFileName.Name = "txtMediaFileName";
-            this.txtMediaFileName.Size = new System.Drawing.Size(766, 13);
+            this.txtMediaFileName.Size = new System.Drawing.Size(702, 13);
             this.txtMediaFileName.TabIndex = 5;
             this.txtMediaFileName.Text = "Media FileName";
             this.txtMediaFileName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -288,7 +288,7 @@
             // 
             this.btnOpen.Location = new System.Drawing.Point(7, 70);
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(131, 23);
+            this.btnOpen.Size = new System.Drawing.Size(150, 23);
             this.btnOpen.TabIndex = 0;
             this.btnOpen.Text = "Open Mp3 File";
             this.btnOpen.UseVisualStyleBackColor = true;
@@ -318,16 +318,20 @@
             // 
             // txtNewStartTime
             // 
+            this.txtNewStartTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNewStartTime.Location = new System.Drawing.Point(60, 12);
             this.txtNewStartTime.Name = "txtNewStartTime";
-            this.txtNewStartTime.Size = new System.Drawing.Size(100, 20);
+            this.txtNewStartTime.Size = new System.Drawing.Size(82, 20);
             this.txtNewStartTime.TabIndex = 0;
             // 
             // txtNewEndTime
             // 
+            this.txtNewEndTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNewEndTime.Location = new System.Drawing.Point(60, 38);
             this.txtNewEndTime.Name = "txtNewEndTime";
-            this.txtNewEndTime.Size = new System.Drawing.Size(100, 20);
+            this.txtNewEndTime.Size = new System.Drawing.Size(82, 20);
             this.txtNewEndTime.TabIndex = 1;
             // 
             // label4
@@ -341,14 +345,17 @@
             // 
             // txtNewName
             // 
+            this.txtNewName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNewName.Location = new System.Drawing.Point(60, 64);
             this.txtNewName.Name = "txtNewName";
-            this.txtNewName.Size = new System.Drawing.Size(100, 20);
+            this.txtNewName.Size = new System.Drawing.Size(82, 20);
             this.txtNewName.TabIndex = 2;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(85, 90);
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSave.Location = new System.Drawing.Point(67, 90);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 3;
@@ -361,15 +368,17 @@
             this.listBoxSavedItem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBoxSavedItem.FormattingEnabled = true;
-            this.listBoxSavedItem.Location = new System.Drawing.Point(563, 13);
+            this.listBoxSavedItem.Location = new System.Drawing.Point(499, 13);
             this.listBoxSavedItem.Name = "listBoxSavedItem";
-            this.listBoxSavedItem.Size = new System.Drawing.Size(193, 316);
+            this.listBoxSavedItem.Size = new System.Drawing.Size(193, 264);
             this.listBoxSavedItem.TabIndex = 1;
             this.listBoxSavedItem.SelectedIndexChanged += new System.EventHandler(this.listBoxSavedItem_SelectedIndexChanged);
             // 
             // SelectedItem
             // 
-            this.SelectedItem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SelectedItem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.SelectedItem.Controls.Add(this.txtNote);
             this.SelectedItem.Controls.Add(this.progressBorderSession);
             this.SelectedItem.Controls.Add(this.btnDeleteSelected);
@@ -383,24 +392,36 @@
             this.SelectedItem.Controls.Add(this.txtCurrentStart);
             this.SelectedItem.Controls.Add(this.label7);
             this.SelectedItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SelectedItem.Location = new System.Drawing.Point(203, 13);
+            this.SelectedItem.Location = new System.Drawing.Point(167, 13);
             this.SelectedItem.Name = "SelectedItem";
-            this.SelectedItem.Size = new System.Drawing.Size(354, 301);
+            this.SelectedItem.Size = new System.Drawing.Size(326, 261);
             this.SelectedItem.TabIndex = 5;
             this.SelectedItem.TabStop = false;
             this.SelectedItem.Text = "Selected Item";
             // 
+            // txtNote
+            // 
+            this.txtNote.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNote.Location = new System.Drawing.Point(8, 90);
+            this.txtNote.Name = "txtNote";
+            this.txtNote.Size = new System.Drawing.Size(312, 113);
+            this.txtNote.TabIndex = 7;
+            this.txtNote.Text = "";
+            this.txtNote.TextChanged += new System.EventHandler(this.txtNote_TextChanged);
+            // 
             // progressBorderSession
             // 
-            this.progressBorderSession.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.progressBorderSession.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBorderSession.BackColor = System.Drawing.Color.Silver;
             this.progressBorderSession.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.progressBorderSession.Controls.Add(this.progressInsideSession);
             this.progressBorderSession.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.progressBorderSession.Location = new System.Drawing.Point(6, 252);
+            this.progressBorderSession.Location = new System.Drawing.Point(6, 212);
             this.progressBorderSession.Name = "progressBorderSession";
-            this.progressBorderSession.Size = new System.Drawing.Size(342, 12);
+            this.progressBorderSession.Size = new System.Drawing.Size(314, 12);
             this.progressBorderSession.TabIndex = 3;
             this.progressBorderSession.Click += new System.EventHandler(this.progressBorderSession_Click);
             // 
@@ -426,9 +447,21 @@
             this.btnDeleteSelected.UseVisualStyleBackColor = true;
             this.btnDeleteSelected.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // btnFullPlay
+            // 
+            this.btnFullPlay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnFullPlay.Location = new System.Drawing.Point(104, 232);
+            this.btnFullPlay.Name = "btnFullPlay";
+            this.btnFullPlay.Size = new System.Drawing.Size(92, 23);
+            this.btnFullPlay.TabIndex = 3;
+            this.btnFullPlay.Text = "Full Play";
+            this.btnFullPlay.UseVisualStyleBackColor = true;
+            this.btnFullPlay.Click += new System.EventHandler(this.btnFullPlay_Click);
+            // 
             // btnPlaySelected
             // 
-            this.btnPlaySelected.Location = new System.Drawing.Point(6, 272);
+            this.btnPlaySelected.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnPlaySelected.Location = new System.Drawing.Point(6, 232);
             this.btnPlaySelected.Name = "btnPlaySelected";
             this.btnPlaySelected.Size = new System.Drawing.Size(92, 23);
             this.btnPlaySelected.TabIndex = 3;
@@ -500,7 +533,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox1.Controls.Add(this.btnSave);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtNewName);
@@ -508,9 +541,9 @@
             this.groupBox1.Controls.Add(this.txtNewEndTime);
             this.groupBox1.Controls.Add(this.txtNewStartTime);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(12, 201);
+            this.groupBox1.Location = new System.Drawing.Point(7, 150);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(175, 124);
+            this.groupBox1.Size = new System.Drawing.Size(150, 124);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "New Item";
@@ -519,7 +552,7 @@
             // 
             this.btnJsonGenerate.Location = new System.Drawing.Point(7, 99);
             this.btnJsonGenerate.Name = "btnJsonGenerate";
-            this.btnJsonGenerate.Size = new System.Drawing.Size(131, 23);
+            this.btnJsonGenerate.Size = new System.Drawing.Size(150, 23);
             this.btnJsonGenerate.TabIndex = 7;
             this.btnJsonGenerate.Text = "Save Project";
             this.btnJsonGenerate.UseVisualStyleBackColor = true;
@@ -529,7 +562,7 @@
             // 
             this.btnOpenProject.Location = new System.Drawing.Point(7, 41);
             this.btnOpenProject.Name = "btnOpenProject";
-            this.btnOpenProject.Size = new System.Drawing.Size(131, 23);
+            this.btnOpenProject.Size = new System.Drawing.Size(150, 23);
             this.btnOpenProject.TabIndex = 0;
             this.btnOpenProject.Text = "Open Project";
             this.btnOpenProject.UseVisualStyleBackColor = true;
@@ -539,36 +572,17 @@
             // 
             this.btnCreateProject.Location = new System.Drawing.Point(7, 12);
             this.btnCreateProject.Name = "btnCreateProject";
-            this.btnCreateProject.Size = new System.Drawing.Size(131, 23);
+            this.btnCreateProject.Size = new System.Drawing.Size(150, 23);
             this.btnCreateProject.TabIndex = 0;
             this.btnCreateProject.Text = "Create Project";
             this.btnCreateProject.UseVisualStyleBackColor = true;
             this.btnCreateProject.Click += new System.EventHandler(this.btnCreateProject_Click);
             // 
-            // txtNote
-            // 
-            this.txtNote.Location = new System.Drawing.Point(8, 90);
-            this.txtNote.Name = "txtNote";
-            this.txtNote.Size = new System.Drawing.Size(340, 153);
-            this.txtNote.TabIndex = 7;
-            this.txtNote.Text = "";
-            this.txtNote.TextChanged += new System.EventHandler(this.txtNote_TextChanged);
-            // 
-            // btnFullPlay
-            // 
-            this.btnFullPlay.Location = new System.Drawing.Point(104, 272);
-            this.btnFullPlay.Name = "btnFullPlay";
-            this.btnFullPlay.Size = new System.Drawing.Size(92, 23);
-            this.btnFullPlay.TabIndex = 3;
-            this.btnFullPlay.Text = "Full Play";
-            this.btnFullPlay.UseVisualStyleBackColor = true;
-            this.btnFullPlay.Click += new System.EventHandler(this.btnFullPlay_Click);
-            // 
             // ToeicLC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 450);
+            this.ClientSize = new System.Drawing.Size(704, 361);
             this.Controls.Add(this.btnJsonGenerate);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.SelectedItem);
@@ -578,6 +592,7 @@
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(720, 400);
             this.Name = "ToeicLC";
             this.Text = "Learning Toeic LC";
             this.panel1.ResumeLayout(false);

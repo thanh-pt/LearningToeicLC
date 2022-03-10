@@ -50,6 +50,8 @@ namespace LearningToeicLC
                 lbl.Hide();
             btnCreateProject.Show();
             btnOpenProject.Show();
+            btnCreateProject.Location = new Point((this.Width - btnCreateProject.Width) / 2, btnCreateProject.Location.Y);
+            btnOpenProject.Location = new Point((this.Width - btnOpenProject.Width) / 2, btnOpenProject.Location.Y);
         }
         private void reloadListItem()
         {
@@ -58,6 +60,8 @@ namespace LearningToeicLC
             {
                 listBoxSavedItem.Items.Add(session.Name + ": " + session.StartTimeString + " - " + session.EndTimeString);
             }
+            btnCreateProject.Location = new Point(7, 12);
+            btnOpenProject.Location = new Point(7, 41);
         }
 
         private double convertStringTime2Double(string strTime)
