@@ -60,7 +60,7 @@ namespace LearningToeicLC
             listBoxSavedItem.Items.Clear();
             foreach (var session in listSessionItems)
             {
-                listBoxSavedItem.Items.Add(session.Name + ": " + session.StartTimeString + " - " + session.EndTimeString);
+                listBoxSavedItem.Items.Add(session.StartTimeString + "~" + session.EndTimeString + " | " + session.Name);
             }
         }
 
@@ -251,6 +251,9 @@ namespace LearningToeicLC
             session.EndTime = convertStringTime2Double(session.EndTimeString);
             listSessionItems.Add(session);
             reloadListItem();
+            txtNewStartTime.Clear();
+            txtNewEndTime.Clear();
+            txtNewName.Clear();
         }
 
         private void btnMarkStart_Click(object sender, EventArgs e)
