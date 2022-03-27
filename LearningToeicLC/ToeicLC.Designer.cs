@@ -76,6 +76,8 @@
             this.btnJsonGenerate = new System.Windows.Forms.Button();
             this.btnOpenProject = new System.Windows.Forms.Button();
             this.btnCreateProject = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.checkBoxAlwayTop = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -91,12 +93,13 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.checkBoxAlwayTop);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.txtMediaFileName);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 282);
+            this.panel1.Location = new System.Drawing.Point(0, 257);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(704, 79);
             this.panel1.TabIndex = 1;
@@ -370,7 +373,7 @@
             this.listBoxSavedItem.FormattingEnabled = true;
             this.listBoxSavedItem.Location = new System.Drawing.Point(499, 13);
             this.listBoxSavedItem.Name = "listBoxSavedItem";
-            this.listBoxSavedItem.Size = new System.Drawing.Size(193, 264);
+            this.listBoxSavedItem.Size = new System.Drawing.Size(193, 238);
             this.listBoxSavedItem.TabIndex = 1;
             this.listBoxSavedItem.SelectedIndexChanged += new System.EventHandler(this.listBoxSavedItem_SelectedIndexChanged);
             // 
@@ -379,6 +382,7 @@
             this.SelectedItem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.SelectedItem.Controls.Add(this.label8);
             this.SelectedItem.Controls.Add(this.txtNote);
             this.SelectedItem.Controls.Add(this.progressBorderSession);
             this.SelectedItem.Controls.Add(this.btnDeleteSelected);
@@ -394,7 +398,7 @@
             this.SelectedItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SelectedItem.Location = new System.Drawing.Point(167, 13);
             this.SelectedItem.Name = "SelectedItem";
-            this.SelectedItem.Size = new System.Drawing.Size(326, 261);
+            this.SelectedItem.Size = new System.Drawing.Size(326, 236);
             this.SelectedItem.TabIndex = 5;
             this.SelectedItem.TabStop = false;
             this.SelectedItem.Text = "Selected Item";
@@ -404,22 +408,22 @@
             this.txtNote.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNote.Location = new System.Drawing.Point(8, 90);
+            this.txtNote.Location = new System.Drawing.Point(6, 118);
             this.txtNote.Name = "txtNote";
-            this.txtNote.Size = new System.Drawing.Size(312, 113);
+            this.txtNote.Size = new System.Drawing.Size(312, 107);
             this.txtNote.TabIndex = 7;
             this.txtNote.Text = "";
             this.txtNote.TextChanged += new System.EventHandler(this.txtNote_TextChanged);
             // 
             // progressBorderSession
             // 
-            this.progressBorderSession.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.progressBorderSession.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBorderSession.BackColor = System.Drawing.Color.Silver;
             this.progressBorderSession.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.progressBorderSession.Controls.Add(this.progressInsideSession);
             this.progressBorderSession.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.progressBorderSession.Location = new System.Drawing.Point(6, 212);
+            this.progressBorderSession.Location = new System.Drawing.Point(6, 87);
             this.progressBorderSession.Name = "progressBorderSession";
             this.progressBorderSession.Size = new System.Drawing.Size(314, 12);
             this.progressBorderSession.TabIndex = 3;
@@ -449,10 +453,9 @@
             // 
             // btnFullPlay
             // 
-            this.btnFullPlay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnFullPlay.Location = new System.Drawing.Point(104, 232);
+            this.btnFullPlay.Location = new System.Drawing.Point(243, 37);
             this.btnFullPlay.Name = "btnFullPlay";
-            this.btnFullPlay.Size = new System.Drawing.Size(92, 23);
+            this.btnFullPlay.Size = new System.Drawing.Size(75, 23);
             this.btnFullPlay.TabIndex = 3;
             this.btnFullPlay.Text = "Full Play";
             this.btnFullPlay.UseVisualStyleBackColor = true;
@@ -460,10 +463,9 @@
             // 
             // btnPlaySelected
             // 
-            this.btnPlaySelected.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnPlaySelected.Location = new System.Drawing.Point(6, 232);
+            this.btnPlaySelected.Location = new System.Drawing.Point(243, 10);
             this.btnPlaySelected.Name = "btnPlaySelected";
-            this.btnPlaySelected.Size = new System.Drawing.Size(92, 23);
+            this.btnPlaySelected.Size = new System.Drawing.Size(75, 23);
             this.btnPlaySelected.TabIndex = 3;
             this.btnPlaySelected.Text = "Play Session";
             this.btnPlaySelected.UseVisualStyleBackColor = true;
@@ -541,7 +543,7 @@
             this.groupBox1.Controls.Add(this.txtNewEndTime);
             this.groupBox1.Controls.Add(this.txtNewStartTime);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(7, 150);
+            this.groupBox1.Location = new System.Drawing.Point(7, 125);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(150, 124);
             this.groupBox1.TabIndex = 6;
@@ -578,13 +580,35 @@
             this.btnCreateProject.UseVisualStyleBackColor = true;
             this.btnCreateProject.Click += new System.EventHandler(this.btnCreateProject_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 102);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(33, 13);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Note:";
+            // 
+            // checkBoxAlwayTop
+            // 
+            this.checkBoxAlwayTop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBoxAlwayTop.AutoSize = true;
+            this.checkBoxAlwayTop.Location = new System.Drawing.Point(622, 38);
+            this.checkBoxAlwayTop.Name = "checkBoxAlwayTop";
+            this.checkBoxAlwayTop.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBoxAlwayTop.Size = new System.Drawing.Size(77, 17);
+            this.checkBoxAlwayTop.TabIndex = 8;
+            this.checkBoxAlwayTop.Text = "Always top";
+            this.checkBoxAlwayTop.UseVisualStyleBackColor = true;
+            this.checkBoxAlwayTop.CheckedChanged += new System.EventHandler(this.checkBoxAlwayTop_CheckedChanged);
+            // 
             // ToeicLC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(704, 361);
-            this.Controls.Add(this.btnJsonGenerate);
+            this.ClientSize = new System.Drawing.Size(704, 336);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnJsonGenerate);
             this.Controls.Add(this.SelectedItem);
             this.Controls.Add(this.listBoxSavedItem);
             this.Controls.Add(this.btnCreateProject);
@@ -592,11 +616,12 @@
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(720, 400);
+            this.MinimumSize = new System.Drawing.Size(720, 260);
             this.Name = "ToeicLC";
             this.Text = "Learning Toeic LC";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ToeicLC_FormClosing);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -661,6 +686,8 @@
         private System.Windows.Forms.Button btnCreateProject;
         private System.Windows.Forms.RichTextBox txtNote;
         private System.Windows.Forms.Button btnFullPlay;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox checkBoxAlwayTop;
     }
 }
 

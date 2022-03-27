@@ -456,5 +456,9 @@ namespace LearningToeicLC
             }
         }
 
+        private void checkBoxAlwayTop_CheckedChanged(object sender, EventArgs e)
+        {
+            this.TopMost = checkBoxAlwayTop.Checked;
+        }
     }
 }
